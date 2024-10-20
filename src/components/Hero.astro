@@ -1,0 +1,39 @@
+---
+import GitHub from "./icons/GitHub.astro";
+import Linkedin from "./icons/Linkedin.astro";
+import Mail from "./icons/Mail.astro";
+import SocialPill from "./icons/SocialPill.astro";
+---
+
+<img
+  src="https://www.doobril.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FCTO.0d03afc7.webp&w=828&q=75"
+  alt="Jencler"
+  class="size-14 rounded-full mb-2 object-cover"
+/>
+<h1 class="text-5xl font-semibold text-white mb-4">Hey, soy Jencler</h1>
+<h2 class="text-lg text-red-100/90 opacity- mb-4">
+  +4 años de experiencia en <span class="text-purple-300/80 font-semibold"
+    >Desarrollo Web</span
+  >. De Moyobamba, Perú
+  <!--  <img
+      class="inline-block"
+      width="18"
+      src="/flag-peru.svg"
+      alt="Flag Perú"
+    /> -->.
+  Especializado en crear sitios web y aplicaciones.
+</h2>
+<nav class="flex gap-4 flex-wrap">
+  <SocialPill href="https://github.com/jencler">
+    <GitHub class="size-6" />
+    Github
+  </SocialPill>
+  <SocialPill href="https://www.linkedin.com/in/jencler/">
+    <Linkedin class="size-6" />
+    Linkedin
+  </SocialPill>
+  <SocialPill href="mailto:jenclervasquez@gmail.com">
+    <Mail class="size-6" />
+    Email
+  </SocialPill>
+</nav>
