@@ -71,19 +71,27 @@ import Footer from "../components/Footer.astro";
     animation-range: 0 200px;
   }
 
-  @keyframes animate-header
-{
-  to {
-    background: rgba(0, 0, 0, .4);
-    backdrop-filter: blur(10px);
-    color: black;
+  @keyframes animate-header {
+    to {
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(10px);
+      color: black;
+    }
   }
-}
   .container-about {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr;
     gap: 64px;
+  }
+
+  @media (min-width: 768px) {
+    .container-about {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 64px;
+    }
   }
 
   .img-avatar {
