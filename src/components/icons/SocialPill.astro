@@ -1,13 +1,15 @@
 ---
 interface Props {
   href: string;
+
 }
 
 const { href } = Astro.props;
 ---
 
 <a
-  class="flex border rounded-full items-center gap-2 text-white border-white/10 px-4 py-2 justify-center bg-white/5 transition hover:bg-white/10 hover:scale-105"
+  download
+  class="flex w-fit border rounded-full items-center gap-2 text-white border-white/10 px-4 py-2 justify-center bg-white/5 transition hover:bg-white/10 hover:scale-105"
   href={href}
   target="_blank"
   rel="noopener noreferrer"

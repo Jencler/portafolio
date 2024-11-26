@@ -19,8 +19,18 @@ import Footer from "../components/Footer.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7590117992295087"
-     crossorigin="anonymous"></script>
+
+    <meta property="og:title" content="Jencler Huaches" />
+    <meta
+      property="og:description"
+      content="Desarrollador Web Full-Stack con +5 años de experiencia"
+    />
+
+    <meta property="og:image" content="/og.png" />
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7590117992295087"
+      crossorigin="anonymous"></script>
   </head>
   <body>
     <div
@@ -47,5 +57,39 @@ import Footer from "../components/Footer.astro";
   body {
     background-color: rgb(10 10 10);
     width: 100%;
+  }
+
+  .header-top-clases {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+
+    animation: animate-header linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 200px;
+  }
+
+  @keyframes animate-header
+{
+  to {
+    background: rgba(0, 0, 0, .4);
+    backdrop-filter: blur(10px);
+    color: black;
+  }
+}
+  .container-about {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 64px;
+  }
+
+  .img-avatar {
+    width: 100%;
+    max-width: 280px;
+    min-width: 180px;
+    border-radius: 12px;
   }
 </style>
